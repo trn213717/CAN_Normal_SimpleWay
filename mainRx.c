@@ -312,7 +312,7 @@ static void MX_CAN_Init(void)
   	can1_filter_init.FilterFIFOAssignment = CAN_FILTER_FIFO1;
   	can1_filter_init.FilterIdHigh = 0x446<<5;
   	can1_filter_init.FilterIdLow = 0x0000;
-  	can1_filter_init.FilterMaskIdHigh = 0x446<<5;
+  	can1_filter_init.FilterMaskIdHigh = 0x446<<5;  // To Allow many to gether do it 0x1<<13
   	can1_filter_init.FilterMaskIdLow = 0x0000;
   	can1_filter_init.FilterMode  = CAN_FILTERMODE_IDMASK;
   	can1_filter_init.FilterScale = CAN_FILTERSCALE_32BIT;
